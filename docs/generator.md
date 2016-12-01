@@ -28,7 +28,6 @@ var hw = helloWorldGenerator();
 
 下一步，必须调用遍历器对象的next方法，使得指针移向下一个状态。也就是说，每次调用`next`方法，内部指针就从函数头部或上一次停下来的地方开始执行，直到遇到下一个`yield`语句（或`return`语句）为止。换言之，Generator函数是分段执行的，`yield`语句是暂停执行的标记，而`next`方法可以恢复执行。
 
-```javascript
 hw.next()
 // { value: 'hello', done: false }
 
